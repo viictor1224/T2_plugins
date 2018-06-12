@@ -1,0 +1,68 @@
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/dtdp.css" rel="stylesheet" type="text/css" />
+     
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="dtdp" />
+     
+  3. That's it!
+  
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.dtdp {
+  border-radius: 16px;
+  width: 200px;
+}
+div.datedropper.dtdp .picker {
+  border-radius: 16px;
+  box-shadow: 0 0 64px 4px rgba(0, 0, 0, 1);
+}
+div.datedropper.dtdp .pick-l {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+div.datedropper.dtdp:before,
+div.datedropper.dtdp .pick-submit,
+div.datedropper.dtdp .pick-lg-b .pick-sl:before,
+div.datedropper.dtdp .pick-m,
+div.datedropper.dtdp .pick-lg-h {
+  background-color: #fd4741;
+}
+div.datedropper.dtdp .pick-y.pick-jump,
+div.datedropper.dtdp .pick li span,
+div.datedropper.dtdp .pick-lg-b .pick-wke,
+div.datedropper.dtdp .pick-btn {
+  color: #fd4741;
+}
+div.datedropper.dtdp .picker,
+div.datedropper.dtdp .pick-l {
+  background-color: #FFF;
+}
+div.datedropper.dtdp .picker,
+div.datedropper.dtdp .pick-arw,
+div.datedropper.dtdp .pick-l {
+  color: #4D4D4D;
+}
+div.datedropper.dtdp .pick-m,
+div.datedropper.dtdp .pick-m .pick-arw,
+div.datedropper.dtdp .pick-lg-h,
+div.datedropper.dtdp .pick-lg-b .pick-sl,
+div.datedropper.dtdp .pick-submit {
+  color: #FFF;
+}
+div.datedropper.dtdp.picker-tiny:before,
+div.datedropper.dtdp.picker-tiny .pick-m {
+  background-color: #FFF;
+}
+div.datedropper.dtdp.picker-tiny .pick-m,
+div.datedropper.dtdp.picker-tiny .pick-m .pick-arw {
+  color: #4D4D4D;
+}
+div.datedropper.dtdp.picker-lkd .pick-submit {
+  background-color: #FFF;
+  color: #4D4D4D;
+}

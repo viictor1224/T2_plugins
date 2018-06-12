@@ -1,0 +1,104 @@
+body {
+    font-weight: 300;
+}
+
+#bg-header{
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/img_bg_2.jpg")no-repeat center;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#plan {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+#line {
+    height: 10px;
+    background-color: rgb(26, 169, 189);
+}
+
+#destinos {
+    height: 100%;
+}
+
+#passos {
+    height: 100%;
+}
+
+.circle {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.circle-label {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.muted-light {
+    color: #b4d7d8 !important;
+}
+
+.title {
+    padding-top: 10%;
+}
+
+#bg-title {
+    height: 65vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("../images/img_bg_1.jpg")no-repeat center fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#cases {
+    height: 100%;
+}
+
+#assine {
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+
+*::-webkit-input-placeholder {
+    color: #fff!important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fff!important;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #fff!important;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff!important;
+}
+
+footer {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+li {
+    padding-bottom: 10px;
+    padding-right: 10px;  
+}

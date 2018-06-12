@@ -1,0 +1,526 @@
+<!-- Victor Xavier RA: 15.01027-9 -->
+<!-- http://ecm252-2018-aula2.s3-website-us-east-1.amazonaws.com/ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
+
+    <!-- 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Top Viagens.</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+    <!-- plugins  -->
+
+    <link href="css/datedropper.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/dtdp.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/datedropper.js"></script>
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+
+
+</head>
+
+<body>
+
+    <section id="bg-header">
+        <nav>
+            <div class="container pt-3">
+                <div class="row navbar-dark navbar-expand-lg">
+                    <div class="col">
+                        <a href="#" class="navbar-brand">Top Viagens
+                            <span class="text-info">.</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Destino</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Viagem</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Preço</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="row py-5 my-5"></div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <p class="display-4 text-light mx-5 pt-5 mt-5">Planejando viajar ao redor do mundo?</p>
+                    </div>
+                    <div class="col-lg-4 offset-1">
+                        <div class="container" id="plan">
+                            <div class="row" id="line"></div>
+                            <div class="row ml-2">
+                                <p class="h3 pt-4">Planeje sua viagem</p>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-form-label text-muted">Seu nome</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label text-muted">Atividades</label>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Atividades</option>
+                                            <option value="1">Escaladas</option>
+                                            <option value="2">Cavernas</option>
+                                            <option value="3">Snowboarding</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label text-muted">Destinos</label>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Filipinas</option>
+                                            <option value="1">USA</option>
+                                            <option value="2">Austrália</option>
+                                            <option value="3">Singapura</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label text-muted">Data da Viagem</label>
+                                        <input type="text" data-large-mode="true" data-large-default="true" data-large-default="true" data-lang="pt" class="form-control"
+                                            data-theme="dtdp" id="date">
+                                    </div>
+
+                                    <div class="row pb-5">
+                                        <button type="submit" class="btn btn-info btn-block">Submit</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5"></div>
+            </div>
+        </header>
+    </section>
+
+    <section id="destinos">
+        <div class="container">
+            <div class="row my-5 py-5">
+                <div class="col-8 offset-2 text-center">
+                    <p class="display-4">Destinos mais famosos!</p>
+                    <p class="text-muted">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
+                        ab aliquam dolor eius.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 pb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/img_1.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">New York, USA</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-4">
+                            <div class="card"> 
+                                <img class="card-img-top" src="images/img_2.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">Soul, South Korea</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/img_3.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">Paris, France</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/img_4.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">Sydney, Australia</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/img_5.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">Greece, Europe</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/img_6.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-info">Spain, Europe</h5>
+                                    <p class="card-text">
+                                        Far far away, behind the word mountains, far from the countries Vokalia..
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Schedule a Trip</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5"></div>
+        </div>
+    </section>
+
+    <section id="passos" class="bg-info text-light">
+        <div class="container">
+            <div class="row mb-5 py-5">
+                <div class="col-8 offset-2 text-center">
+                    <p class="display-4 title">Como funciona</p>
+                    <p class="text-muted muted-light">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
+                        ab aliquam dolor eius.</p>
+                </div>
+            </div>
+            <div class="row mb-5 pb-5">
+                <div class="col-md-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="circle" align="center">
+                                <div class="circle-label">1</div>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="text-center">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                                <p class="text-muted muted-light">
+                                    Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="circle" align="center">
+                                <div class="circle-label">2</div>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="text-center">
+                                <h5>Consectetur adipisicing elit</h5>
+                                <p class="text-muted muted-light">
+                                    Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="circle" align="center">
+                                <div class="circle-label">3</div>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="text-center">
+                                <h5>Dignissimos asperiores vitae</h5>
+                                <p class="text-muted muted-light">
+                                    Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bg-title">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <p class="display-3 text-light title">Temos atendimento e serviços de primeira linha!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases">
+        <div class="container">
+            <div class="row mb-5 py-5">
+                <div class="col-8 offset-2 text-center">
+                    <p class="display-4 title">Nossos cases de sucesso</p>
+                    <p class="text-muted">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
+                        ab aliquam dolor eius.</p>
+                </div>
+            </div>
+            <div class="row mb-5 pb-5">
+                <div class="col-md-3 mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="display-4 text-info">196</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <P class="text-muted">DESTINO</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="display-4 text-info">97</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <P class="text-muted">HOTÉIS</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="display-4 text-info">12402</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="text-muted">PASSAGEIROS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="display-4 text-info">12202</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <P class="text-muted">CLIENTE FELIZ</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assine" class="bg-info text-light">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-8 offset-2 text-center">
+                    <p class="display-4 title">Assine</p>
+                    <p class="text-muted muted-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper pellentesque sodales. Curabitur accumsan quam
+                        nec dui venenatis feugiat. Donec.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-2">
+                    <input type="email" class="form-control bg-transparent text-light border-info placeholder-text" placeholder="Seu email">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-info btn-block">Assine</button>
+                </div>
+            </div>
+            <div class="row py-5 my-3"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <h6>SOBRE NÓS</h6>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia
+                        iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?
+                    </p>
+                </div>
+                <div class="col-md-2 offset-1">
+                    <h6>DESTINO</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info">Europa</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Austrália</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Ásia</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Canadá</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Dubai</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>HOTÉIS</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info">Luxe Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Italy 5 Star hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Dubai Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">Deluxe Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">BoraBora Hotel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>ENTRE EM CONTATO</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-phone"></i> +55 11 4239 3000</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-envelope-o"></i> maua@maua.br</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-comments"></i> Chat ao vivo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <p class="text-muted mb-0">©2018.All Rights Reserved.</p>
+                    <p class="text-muted">Desenvolvido por
+                        <a href="https://www.maua.br/" class="text-info">Mauá</a> Imagens:
+                        <a href="http://unsplash.com/" class="text-info">Unsplash</a>
+                    </p>
+                </div>
+                <div class="col-md-3 offset-5 mb-5">
+                    <ul class="list-inline" align="right">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-info">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-info">
+                                <i class="fa fa-facebook-official"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-info">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-info">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-5"></div>
+        </div>
+    </footer>
+
+    <script>
+        $('#date').dateDropper();
+    </script>
+    <script>
+    $("html").easeScroll();
+    </script>
+    
+    
+
+</body>
+
+</html>
